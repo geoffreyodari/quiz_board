@@ -12,38 +12,42 @@
 <body>
     <div class="container">
         <h1 class="text-center">Quiz Board</h1>
-        <div class="container border mx-auto p-3">
-            <ol>
-                <li>
-                    What is the capital of Nairobi?
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Kampala
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Eldoret
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Kisumu
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Mombasa
-                        </label>
-                      </div>
+        <div class="container border mx-auto p-3" id="page">
+            <form method="post" action="">
+                <ol>
+                    <li>
+                        What is the capital of Nairobi?
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question0"  value="correct" id="question10">
+                            <label class="form-check-label" for="question10">
+                              Nairobi
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question0" value="wrong" id="question11">
+                            <label class="form-check-label" for="question11">
+                              Eldoret
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question0" value="wrong" id="question12">
+                            <label class="form-check-label" for="question12">
+                              Kisumu
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question0" value="wrong" id="question13">
+                            <label class="form-check-label" for="question13">
+                              Mombasa
+                            </label>
+                          </div>
+    
+                    </li>
+                </ol>
+                <button class="btn btn-success" id="getAnswers">Submit</button>
 
-                </li>
-            </ol>
-            <button class="btn btn-success">Submit</button>
+            </form>
+            
         </div>
         
     </div>
