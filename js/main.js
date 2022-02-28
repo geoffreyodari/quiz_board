@@ -1,11 +1,8 @@
-// $('td[name="tcol1"]')   // Matches exactly 'tcol1'
-// $('td[name^="tcol"]' )  // Matches those that begin with 'tcol'
-// $('td[name$="tcol"]' )  // Matches those that end with 'tcol'
-// $('td[name*="tcol"]' )  // Matches those that contain 'tcol'
-
 
 $(document).ready(()=>{
   let score=0
+
+  fetch("questions.json").then(results=>results.json()).then(data=>loadQuestions(data))
     
     $('#getAnswers').click(e=>{
        e.preventDefault()
@@ -25,3 +22,24 @@ $(document).ready(()=>{
     })
                
 })
+
+
+
+
+
+const loadQuestions= data=>{
+                    $("ol").html(
+                       data.map((data,index)=>`<li>${data.question} ${loadAnswerOptions(data.answers,index)} </li>`).join("")
+                    )                   
+                }
+
+const loadAnswerOptions = (answers,index)=>{
+     return answers.map((item,id)=>`<div class="form-check">
+                                <input class="form-check-input" type="radio" name="question${index}"  value="${item.correct==true?"correct":"wrong"}" id="question1${id}">
+                                    <label class="form-check-label" for="question1${id}">
+                                    ${item.answer}
+                                        </label>
+                                </div>`).join("")
+                  
+                            }                    
+

@@ -1,0 +1,37 @@
+[{
+
+	"question": "what is the capital of kenya?",
+	"answers": [{
+			"answer": "Nairobi",
+			"correct": true
+		},
+		{
+			"answer": "Mombasa",
+			"correct": false
+		},
+		{
+			"answer": "Kisumu",
+			"correct": false
+		}
+	]
+}, {
+	"question": "what is the capital of Uganda?",
+	"answers": [{
+			"answer": "Nairobi",
+			"correct": false
+		},
+		{
+			"answer": "Kampala",
+			"correct": true
+		},
+		{
+			"answer": "Kisumu",
+			"correct": false
+		},
+		{
+			"answer": "Kitale",
+			"correct": false
+		}
+	]
+
+}]
