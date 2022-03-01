@@ -1,37 +1,81 @@
-[{
+[
 
-	"question": "What is the capital of kenya?",
-	"answers": [{
-			"answer": "Nairobi",
-			"correct": true
-		},
-		{
-			"answer": "Mombasa",
-			"correct": false
-		},
-		{
-			"answer": "Kisumu",
-			"correct": false
-		}
-	]
-}, {
-	"question": "What is the capital of Uganda?",
-	"answers": [{
-			"answer": "Nairobi",
-			"correct": false
-		},
-		{
-			"answer": "Kampala",
-			"correct": true
-		},
-		{
-			"answer": "Kisumu",
-			"correct": false
-		},
-		{
-			"answer": "Kitale",
-			"correct": false
-		}
-	]
+	{
 
-}]
+		"question": "How many years are in a Decade?",
+		"answers": [
+				{
+					"answer": "20",
+					"correct": false
+				},
+				{
+					"answer": "50",
+					"correct": false
+				},
+				{
+					"answer": "10",
+					"correct": true
+				}
+		   	]
+	},
+	{
+
+		"question": "Who is the 4th president of Kenya?",
+		"answers": [
+				{
+					"answer": "Raila Odinga",
+					"correct": false
+				},
+				{
+					"answer": "Uhuru Kenyatta",
+					"correct": true
+				},
+				{
+					"answer": "William Ruto",
+					"correct": false
+				},
+				{
+					"answer": "Kalonzo Musyoka",
+					"correct": false
+				}
+		   	]
+	},
+	{
+
+		"question": "What is the capital of kenya?",
+		"answers": [
+				{
+					"answer": "Nairobi",
+					"correct": true
+				},
+				{
+					"answer": "Mombasa",
+					"correct": false
+				},
+				{
+					"answer": "Kisumu",
+					"correct": false
+				}
+		   	]
+	},
+	{
+
+		"question": "What is the capital of Rwanda?",
+		"answers": [
+				{
+					"answer": "Nairobi",
+					"correct": false
+				},
+				{
+					"answer": "Kigali",
+					"correct": true
+				},
+				{
+					"answer": "Kisumu",
+					"correct": false
+				}
+		   	]
+	}
+
+
+]
