@@ -22,12 +22,14 @@ $ git clone https://github.com/geoffreyodari/quiz_board
 ## Using the application
 ### Accessing the application
 On your web browser type in the address bar  http://your_server_address/quiz_board  to access the app 
-![image](https://QMwPEWVbdhBpWpCSUvXXCH)
+![image](https://drive.google.com/uc?export=view&id=1BXscIpKVF0o2agTTEdD4ZkP9xaoYvMfC)
 
 ### Answering Questions
- check an answer from the answer options provided
+ Check the correct answer from the answer options provided
+![image](https://drive.google.com/uc?export=view&id=1qTlFjk4mVKkEXcGQSdfuyT9tI5QjfWbj)
 
 ### Submiting Answers
- click on the submit button 
+ click on the submit button to submit your answers 
 ### Viewing Scores
  A student will be able to view their performance
+ ![image](https://drive.google.com/uc?export=view&id=1Zw2wwTF1oFROWhoXqyQnaOGY0oofaRs_)
