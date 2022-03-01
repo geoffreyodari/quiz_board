@@ -1,6 +1,7 @@
-# Contact Manager
+# Quiz Board
 Quiz Board is a web application for testing students using quizzes.
 
+Created by Geoffrey Odari 
 ## View demo
 https://geoffreyodari.github.io/quiz_board/
 
