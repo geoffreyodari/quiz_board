@@ -20,7 +20,7 @@ $(document).ready(()=>{
         })
 
        $("#page").html('<h1 class="text-center">Your Score is '+score+' correct out of '+questions+' questions </h1>')
-       $("#page").append(`<h1 class="text-center">You are ${(score/questions)*100}% Correct</h1>`)
+       $("#page").append(`<h1 class="text-center">You are ${Math.round((score/questions))*100}% Correct</h1>`)
        $("#page").append(rating((score/questions)))   
     })
 
