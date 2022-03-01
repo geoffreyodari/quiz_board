@@ -21,7 +21,7 @@ $(document).ready(()=>{
 
        $("#page").html('<h1 class="text-center">Your Score is '+score+' correct out of '+questions+' questions </h1>')
        $("#page").append(`<h1 class="text-center">${(score/questions)*100}%</h1>`)
-       $("#page").append(`<h1 class="text-center">${(score/questions)*100}%</h1>`)   
+       $("#page").append(`<h1 class="text-center">${rating((score/questions))}</h1>`)   
     })
 
 
@@ -48,5 +48,17 @@ $(document).ready(()=>{
 
 
 
-                   
+  const rating = (value)=>{
+      if(value<0.5){
+            return 'You have performed poorly'
+      }
+
+      if(value>=0.5 && value< 0.8){
+        return 'You have performed fairly'
+      }
+
+      if(value>=0.8){
+        return 'You have performed excelently'
+      }
+  }                
 
