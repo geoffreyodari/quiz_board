@@ -1,6 +1,7 @@
-# Contact Manager
+# Quiz Board
 Quiz Board is a web application for testing students using quizzes.
 
+Created by Geoffrey Odari 
 ## View demo
 https://geoffreyodari.github.io/quiz_board/
 
@@ -17,17 +18,40 @@ Any web server that can support html pages will do.
 ````
 $ git clone https://github.com/geoffreyodari/quiz_board
 ````
+## Creating your questions
+1. create your own custom question using the JSON object format provided 
+```
+    {
 
+	"question": "What is the capital of kenya?",
+	"answers": [{
+                    "answer": "Nairobi",
+                    "correct": true
+                },
+                {
+                    "answer": "Mombasa",
+                    "correct": false
+                },
+                {
+                    "answer": "Kisumu",
+                    "correct": false
+                }
+	            ]
+    }
+```
+2. place each question object into an array and save it in the file "questions.json" in the /js directory 
 
 ## Using the application
 ### Accessing the application
 On your web browser type in the address bar  http://your_server_address/quiz_board  to access the app 
-![image](https://QMwPEWVbdhBpWpCSUvXXCH)
+![image](https://drive.google.com/uc?export=view&id=1BXscIpKVF0o2agTTEdD4ZkP9xaoYvMfC)
 
 ### Answering Questions
- check an answer from the answer options provided
+ Check the correct answer from the answer options provided
+![image](https://drive.google.com/uc?export=view&id=1qTlFjk4mVKkEXcGQSdfuyT9tI5QjfWbj)
 
 ### Submiting Answers
- click on the submit button 
+ click on the submit button to submit your answers 
 ### Viewing Scores
  A student will be able to view their performance
+ ![image](https://drive.google.com/uc?export=view&id=1Zw2wwTF1oFROWhoXqyQnaOGY0oofaRs_)

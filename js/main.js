@@ -20,29 +20,29 @@ $(document).ready(()=>{
         })
 
        $("#page").html('<h1 class="text-center">Your Score is '+score+' correct out of '+questions+' questions </h1>')
-       $("#page").append(`<h1 class="text-center">${(score/questions)*100}%</h1>`)
-       $("#page").append(`<h1 class="text-center">${rating((score/questions))}</h1>`)   
+       $("#page").append(`<h1 class="text-center">You are ${Math.round((score/questions))*100}% Correct</h1>`)
+       $("#page").append(rating((score/questions)))   
     })
 
 
     const loadQuestions= data=>{
-        $("ol").html(
-           data.map((data,index)=>`<li>${data.question} ${loadAnswerOptions(data.answers,index)} </li>`).join("")
-        ) 
-        questions= $("li").length                  
-    }
+                                    $("ol").html(
+                                    data.map((data,index)=>`<li>${data.question} ${loadAnswerOptions(data.answers,index)} </li>`).join("")
+                                    )
+                                    //get the number of question 
+                                    questions= $("li").length                  
+                                }
 
     const loadAnswerOptions = (answers,index)=>{
-                            return answers.map((item,id)=>`<div class="form-check">
-                            <input class="form-check-input" type="radio" name="question${index}"  value="${item.correct==true?"correct":"wrong"}" id="question1${id}">
-                                <label class="form-check-label" for="question1${id}">
-                                ${item.answer}
-                                    </label>
-                            </div>`).join("")
-        
-    } 
-               
-})
+                                                    return answers.map((item,id)=>`<div class="form-check">
+                                                                                        <input class="form-check-input" type="radio" name="question${index}"  value="${item.correct==true?"correct":"wrong"}" id="question1${id}">
+                                                                                            <label class="form-check-label" for="question1${id}">
+                                                                                                ${item.answer}
+                                                                                            </label>
+                                                                                        </div>`).join("")
+                                                } 
+                                                    
+                                        })
 
 
 
@@ -50,15 +50,15 @@ $(document).ready(()=>{
 
   const rating = (value)=>{
       if(value<0.5){
-            return 'You have performed poorly'
+            return '<h1 class="text-center text-danger">You have performed poorly</h1>'
       }
 
       if(value>=0.5 && value< 0.8){
-        return 'You have performed fairly'
+        return '<h1 class="text-center text-warning">You have performed fairly</h1>'
       }
 
       if(value>=0.8){
-        return 'You have performed excelently'
+        return '<h1 class="text-center text-success">You have performed excelently</h1>'
       }
   }                
 
