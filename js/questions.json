@@ -1,6 +1,6 @@
 [{
 
-	"question": "what is the capital of kenya?",
+	"question": "What is the capital of kenya?",
 	"answers": [{
 			"answer": "Nairobi",
 			"correct": true
@@ -15,7 +15,7 @@
 		}
 	]
 }, {
-	"question": "what is the capital of Uganda?",
+	"question": "What is the capital of Uganda?",
 	"answers": [{
 			"answer": "Nairobi",
 			"correct": false
