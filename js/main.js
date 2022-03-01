@@ -20,8 +20,8 @@ $(document).ready(()=>{
         })
 
        $("#page").html('<h1 class="text-center">Your Score is '+score+' correct out of '+questions+' questions </h1>')
-       $("#page").append(`<h1 class="text-center">${(score/questions)*100}%</h1>`)
-       $("#page").append(`<h1 class="text-center">${rating((score/questions))}</h1>`)   
+       $("#page").append(`<h1 class="text-center">You are ${(score/questions)*100}% Correct</h1>`)
+       $("#page").append(rating((score/questions)))   
     })
 
 
@@ -50,15 +50,15 @@ $(document).ready(()=>{
 
   const rating = (value)=>{
       if(value<0.5){
-            return 'You have performed poorly'
+            return '<h1 class="text-center text-danger">You have performed poorly</h1>'
       }
 
       if(value>=0.5 && value< 0.8){
-        return 'You have performed fairly'
+        return '<h1 class="text-center text-warning">You have performed fairly</h1>'
       }
 
       if(value>=0.8){
-        return 'You have performed excelently'
+        return '<h1 class="text-center text-success">You have performed excelently</h1>'
       }
   }                
 
