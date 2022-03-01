@@ -3,7 +3,7 @@ $(document).ready(()=>{
   let score=0
   let questions = 0
 
-  fetch("questions.json").then(results=>results.json()).then(data=>loadQuestions(data))
+  fetch("./js/questions.json").then(results=>results.json()).then(data=>loadQuestions(data))
     
     $('#getAnswers').click(e=>{
        e.preventDefault()
