@@ -17,7 +17,28 @@ Any web server that can support html pages will do.
 ````
 $ git clone https://github.com/geoffreyodari/quiz_board
 ````
+## Creating your questions
+1. create your own custom question using the JSON object format provided 
+```
+    {
 
+	"question": "What is the capital of kenya?",
+	"answers": [{
+                    "answer": "Nairobi",
+                    "correct": true
+                },
+                {
+                    "answer": "Mombasa",
+                    "correct": false
+                },
+                {
+                    "answer": "Kisumu",
+                    "correct": false
+                }
+	            ]
+    }
+```
+2. place each question object into an array and save it in the file "questions.json" in the /js directory 
 
 ## Using the application
 ### Accessing the application
