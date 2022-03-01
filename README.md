@@ -2,7 +2,7 @@
 Quiz Board is a web application for testing students using quizzes.
 
 ## View demo
-
+https://geoffreyodari.github.io/quiz_board/
 
 ### Authors
 Geoffrey Odari
